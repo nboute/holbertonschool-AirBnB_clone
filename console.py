@@ -29,7 +29,7 @@ class HBNBCommand(cmd.Cmd):
     def do_create(self, arg):
         """Create a new instance of basemodel"""
         if (arg is None or len(arg) == 0):
-            print('** class name missing**')
+            print('** class name missing **')
         elif (arg not in HBNBCommand.models_list):
             print('** class doesn\'t exist **')
         else:
@@ -41,7 +41,7 @@ class HBNBCommand(cmd.Cmd):
         """Print the string representation of an instance"""
         arg = line.split()
         if (line is None or len(line) == 0):
-            print('** class name missing**')
+            print('** class name missing **')
         elif (arg[0] not in HBNBCommand.models_list):
             print('** class doesn\'t exist **')
         elif (len(arg) < 2):
@@ -58,7 +58,7 @@ class HBNBCommand(cmd.Cmd):
         """Remove an instance by class name and id"""
         arg = line.split()
         if line is None or len(line) == 0:
-            print('** class name missing**')
+            print('** class name missing **')
         elif arg[0] not in HBNBCommand.models_list:
             print('** class doesn\'t exist **')
         elif len(arg) < 2:
@@ -94,7 +94,7 @@ class HBNBCommand(cmd.Cmd):
         """Updates a instance based on class name and id"""
         arg = line.split()
         if line is None or len(arg) == 0:
-            print('** class name missing**')
+            print('** class name missing **')
         elif arg[0] not in HBNBCommand.models_list:
             print('** class doesn\'t exist **')
         elif len(arg) < 2:
