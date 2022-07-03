@@ -14,6 +14,10 @@ class HBNBCommand(cmd.Cmd):
     models_list = ["BaseModel", "User", "State", "City", "Amenity", "Place",
                    "Review"]
 
+    def emptyline(self):
+        """Overwrite default to do nothing when empty line is entered"""
+        pass
+
     def do_quit(self, arg):
         """Exits the program"""
         return True
